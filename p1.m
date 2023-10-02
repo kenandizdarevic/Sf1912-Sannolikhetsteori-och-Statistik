@@ -1,6 +1,6 @@
 %% Problem 1: Simulering av konfidensintervall
 % Parametrar:
-n = 100; %Antal matningar
+n = 2000; %Antal matningar
 mu = 2; %Vantevardet
 sigma = 1; %Standardavvikelsen
 alpha = 0.05;
