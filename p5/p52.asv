@@ -1,0 +1,8 @@
+data = load("birth.dat");
+
+birth_weight = data(:,3);
+mother_age = data(:, 4);
+mother_length = data(:, 16);
+
+significance_lebel 
+print
