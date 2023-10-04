@@ -1,0 +1,22 @@
+data = load("data\moore.dat");
+
+trans_per_area = data(:, 1);
+year = data(:, 2);
+
+w = log(year);
+
+X = [ones(length(trans_per_area), 1), trans_per_area];
+
+beta_hat = regress(w, X);
+
+% Plottar residualerna.
+res = w - X*beta_hat;
+
+subplot(2,1,1), normplot(res)
+ylabel('Sannolikhet')
+title('Normalitetsplott')
+xlabel('Teoretiska kvantiler')
+
+subplot(2,1,2), hist(res)
+title('Histogram över resiudaler')
+ylim([0, 65]);
