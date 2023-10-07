@@ -1,4 +1,4 @@
-data = load("birth.dat");
+data = load("data\birth.dat");
 
 birth_weight = data(:,3);
 mother_age = data(:, 4);
