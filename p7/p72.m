@@ -15,3 +15,15 @@ disp(beta_hat);
 
 disp('Konfidensintervall för koefficienter:');
 disp(confidence_interval);
+
+scatter(mother_weight, birth_weight, 'blue');
+hold on; 
+
+x_values = min(mother_weight):0.1:max(mother_weight);
+y_values = beta_hat(1) + beta_hat(2) * x_values; 
+plot(x_values, y_values, 'r', 'LineWidth', 2);
+
+legend('Data', 'Regression', 'Location', 'Northwest');
+title("Linjär Regression (med all data)")
+xlabel("Data")
+ylabel("Födelsevikt")
