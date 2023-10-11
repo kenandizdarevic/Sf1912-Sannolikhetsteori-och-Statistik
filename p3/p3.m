@@ -10,8 +10,7 @@ x = raylrnd(b, M, 1);
 sigma = 1;
 n = 10000;
 alpha = 0.05;
-my_est = sqrt(mean(x)^2/2); % LK-Skattning
-
+my_est = sqrt(mean(y)^2/2);
 % Konfidensintervall
 lower_bound = my_est - norminv(1-alpha/2)*sigma/sqrt(n);
 upper_bound = my_est + norminv(1-alpha/2)*sigma/sqrt(n);
