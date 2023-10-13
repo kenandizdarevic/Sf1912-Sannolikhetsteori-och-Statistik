@@ -1,5 +1,5 @@
 %% Problem 4: Fordelningar av givna data
-load birth.dat
+load data\birth.dat
 
 % Etergymnasial utbildning
 x = birth(birth(:, 17) == 1, 3);

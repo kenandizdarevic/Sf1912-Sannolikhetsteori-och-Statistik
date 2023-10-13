@@ -6,15 +6,12 @@ mother_length = data(:, 16);
 mother_weight = data(:,15);
 
 significance_level = 0.05; 
-mother_length_nd = jbtest(mother_length, significance_level);
+[mother_length_nd, pml] = jbtest(mother_length, significance_level)
 mother_age_nd = jbtest(mother_age, significance_level);
 mother_weight_nd = jbtest(mother_weight, significance_level);
 birth_weight_nd = jbtest(mother_age, significance_level);
 
-mother_length_nd
-mother_age_nd
-mother_weight_nd
-birth_weight_nd
+
 
 fprintf('Moderns längd är normalfördelad: %s\n', ...
         tfToString(mother_length_nd == 0));
