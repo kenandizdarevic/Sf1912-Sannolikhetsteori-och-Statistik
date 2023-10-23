@@ -12,7 +12,7 @@ X = [ones(size(mother_weight)),mother_weight,mother_smoking,mother_high_school];
 % Skriv ut resultaten
 disp('Uppskattade koefficienter:');
 disp(beta_hat);
-
+% TESTAR GITHUB
 disp('Konfidensintervall för koefficienter:');
 disp(confidence_interval);
 
